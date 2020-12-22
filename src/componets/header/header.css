@@ -1,0 +1,18 @@
+.headerClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  padding: 1rem;
+}
+
+.title {
+  padding: 0.7rem;
+}

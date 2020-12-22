@@ -1,0 +1,11 @@
+div .form1 {
+  padding: 0.3rem;
+}
+
+div .form1 .input-form1 {
+  height: 20px;
+  width: 300px;
+  border-radius: 2px;
+  padding: 0.5rem;
+  font-size: 18px;
+}

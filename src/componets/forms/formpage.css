@@ -1,0 +1,23 @@
+.FormPage1 {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(7, 4, 53);
+  border-radius: 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+  padding: 1rem;
+  max-width: 350px;
+  background-color: rgba(68, 99, 104, 0.068);
+}
+
+.form1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btnForm1 {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
