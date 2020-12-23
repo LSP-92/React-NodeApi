@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from "axios";
 //const { URL_API: urlApi } = process.env
 
 /* const client =  axios.create({
@@ -15,7 +15,7 @@ import axios from 'axios'
     )
 } */
 
-export const getAds = () => {
-    const url = 'http://127.0.0.1:5000/apiv1/adverts'
-    return axios.get(url)
-}
+export const getAds = (path) => {
+  const url = `http://192.168.1.134:5000/${path}`;
+  return axios.get(url);
+};

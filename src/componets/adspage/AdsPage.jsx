@@ -4,11 +4,11 @@ import Footer from "../footer/Footer";
 //import "./adspage.css";
 
 const AdsPage = () => (
-  <div className="adspage">
+  <>
     <Header />
     <AdsList />
     <Footer></Footer>
-  </div>
+  </>
 );
 
 export default AdsPage;

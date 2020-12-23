@@ -1,16 +1,56 @@
-.anuncio {
-  width: 350px;
-  height: 350px;
-  border: 1px solid #2c1ef4;
-  border-radius: 4px;
+.cardAds {
   padding: 1rem;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.anuncio button {
-  margin-right: 35px;
-  margin-left: 35px;
+.photoAds {
+  max-width: 20vw;
+  min-height: calc(15vw + 10px);
+  border-radius: 30px;
+}
+
+.cardAds button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardAds .card-title {
+  text-align: center;
+  font-weight: 800;
+}
+
+.cardAds .tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardAds ul {
+  list-style: none;
+}
+.cardAds li {
+  padding: 0.6rem;
+}
+
+.cardAds .tag {
+  margin: 1rem;
+  padding: 0.3rem;
+  font-size: 18px;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+  .photoAds {
+    max-width: 150px;
+    border-radius: 30px;
+  }
+  .cardAds {
+    border: 1px solid;
+  }
 }

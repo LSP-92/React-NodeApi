@@ -10,7 +10,7 @@ const Header = (state) => {
     <header className="headerClass">
       <div className="logo">
         <Photo src={img} />
-        <h2 className="title">NodeApi</h2>
+        <h2 className="title">NodePop</h2>
       </div>
       <Navbar state={state} />
     </header>

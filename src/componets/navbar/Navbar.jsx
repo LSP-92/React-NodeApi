@@ -1,11 +1,9 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./app";
 import "./navbar.css";
 
 const Navbar = ({ state }) => {
-  /*   const { state, setState } = useState("") */
   return (
     <div className="navbar">
       <Link to="/">
