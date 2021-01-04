@@ -1,0 +1,46 @@
+{
+  "anuncios": [
+    {
+      "name": "Bicicleta",
+      "sale": true,
+      "price": 23015,
+      "photo": "bici.jpg",
+      "tags": ["lifestyle", "motor"]
+    },
+    {
+      "name": "iPhone 3GS",
+      "sale": false,
+      "price": 5000,
+      "photo": "iphone.jpg",
+      "tags": ["lifestyle", "mobile"]
+    },
+    {
+      "name": "MSI 27''",
+      "sale": true,
+      "price": 270,
+      "photo": "msi.jpg",
+      "tags": ["lifestyle", "pc"]
+    },
+    {
+      "name": "PS3",
+      "sale": true,
+      "price": 80,
+      "photo": "ps3.jpg",
+      "tags": ["lifestyle", "gaming"]
+    },
+    {
+      "name": "A70",
+      "sale": false,
+      "price": 82,
+      "photo": "a70.jpg",
+      "tags": ["lifestyle", "mobile"]
+    },
+    {
+      "name": "Bmw x3",
+      "sale": false,
+      "price": 5000,
+      "photo": "bmw.jpeg",
+      "tags": ["motor", "lifestyle"]
+    }
+  ]
+}
