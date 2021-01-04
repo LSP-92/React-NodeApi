@@ -5,11 +5,21 @@
   grid-auto-rows: minmax(100px, auto);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1000px) {
   .anuncios {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
     grid-auto-rows: minmax(auto);
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .anuncios {
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }

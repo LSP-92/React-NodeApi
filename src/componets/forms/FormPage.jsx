@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import "./formpage.css";
-import Form from "../shared/form";
+import Input from "../shared/form/Input";
 import Button from "../shared/buttons/Button";
 import Header from "../header/Header";
 import loginApi from "../../lib/axiosGlobal";
@@ -23,7 +23,7 @@ const FormPage = () => {
     <>
       <Header state={true} />
       <form className="FormPage1" onSubmit={viewInput}>
-        <Form
+        <Input
           id="inp-email"
           type="email"
           name="email"
@@ -31,7 +31,7 @@ const FormPage = () => {
           value={email}
           onChange={handleOnchange}
         />
-        <Form
+        <Input
           id="inp-password"
           type="password"
           name="password"

@@ -45,12 +45,77 @@
   font-weight: bold;
 }
 
+.textAd ul li {
+  padding: 0.3rem;
+  font-size: 18px;
+}
+
+.textAd ul li span {
+  color: rgb(27, 187, 187);
+}
+
 @media (max-width: 1280px) {
   .photoAds {
     max-width: 150px;
     border-radius: 30px;
   }
   .cardAds {
-    border: 1px solid;
+    background-color: rgba(251, 251, 251, 0.856);
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .photoAds {
+    max-width: 140px;
+    border-radius: 30px;
+  }
+  .cardAds {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photoAds {
+    max-width: 100px;
+    border-radius: 30px;
+  }
+  .cardAds {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 500px) {
+  .photoAds {
+    max-width: 80px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardAds {
+    padding: 1rem;
+    max-width: 120px;
+  }
+
+  .cardAds .tags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tags .tag {
+    font-size: 12px;
+    border: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .textAd ul {
+    margin: 0px;
+  }
+
+  .textAd ul li {
+    font-size: 14px;
   }
 }

@@ -1,10 +1,12 @@
+import React from "react";
+
 import { useHistory } from "react-router-dom";
 import Photo from "../shared/Photo";
 
 import Button from "../shared/buttons/Button";
 import { Card } from "react-bootstrap";
 import "./ads.css";
-
+import deafultImage from "../../assets/img/no-image.png";
 const Ad = ({ name, sale, price, tags, _id, photo }) => {
   const history = useHistory();
   const handleClick = () => {
@@ -37,9 +39,12 @@ const Ad = ({ name, sale, price, tags, _id, photo }) => {
 
   return (
     <Card className="cardAds">
-      <Photo src={`http://192.168.1.134:5000${photo}`} className="photoAds" />
+      <Photo
+        src={photo ? `http://192.168.43.67:5000${photo}` : deafultImage}
+        className="photoAds"
+      />
       <Card.Title>{name}</Card.Title>
-      <div className="">
+      <div className="textAd">
         <ul>
           <li>
             <span>Price: </span>

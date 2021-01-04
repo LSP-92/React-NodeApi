@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./adpage.css";
 
 const Ad = ({ name, sale, price, tags, _id }) => (

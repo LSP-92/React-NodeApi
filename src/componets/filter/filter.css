@@ -1,0 +1,56 @@
+.filters-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.inp-filter {
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  min-height: 38px;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 500;
+  width: 300px;
+}
+
+.inpSelect-filter {
+  height: 29px;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.filters .filter-button {
+  margin-left: 3rem;
+}
+
+.no-view {
+  display: none !important;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 1rem;
+}
+
+.icon label {
+  color: blue;
+}
+
+@media (max-width: 1200px) {
+  .filters-component {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inp-filter {
+    width: 400px;
+  }
+}

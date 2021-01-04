@@ -16,6 +16,6 @@ import axios from "axios";
 } */
 
 export const getAds = (path) => {
-  const url = `http://192.168.1.134:5000/${path}`;
+  const url = `http://192.168.43.67:5000/${path}`;
   return axios.get(url);
 };

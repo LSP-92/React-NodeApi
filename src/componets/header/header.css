@@ -16,3 +16,34 @@ img {
 .title {
   padding: 0.7rem;
 }
+
+@media (min-width: 601px) {
+  .headerClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    padding: 1rem;
+  }
+
+  .title {
+    padding: 0.7rem;
+  }
+
+  div .menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  div .navbar {
+    display: none !important;
+  }
+}

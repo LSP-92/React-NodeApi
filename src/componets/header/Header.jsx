@@ -4,6 +4,7 @@ import Photo from "../shared/Photo";
 import img from "../../assets/img/icons8-automatic-64.png";
 import Navbar from "../navbar/Navbar";
 import "./header.css";
+import Menu from "../menu/Menu";
 
 const Header = (state) => {
   return (
@@ -13,6 +14,7 @@ const Header = (state) => {
         <h2 className="title">NodePop</h2>
       </div>
       <Navbar state={state} />
+      <Menu></Menu>
     </header>
   );
 };
