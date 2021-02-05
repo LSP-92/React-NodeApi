@@ -15,7 +15,7 @@ const NewAdvert = (props) => {
     severity: "info",
   };
 
-  const [value, setValue] = useState({});
+  const [value, setValue] = useState({ name: "", price: 0 });
   const [modal, setModal] = useState(defaultValue);
 
   const handleOnchange = (e) => {
