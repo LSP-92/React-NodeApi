@@ -1,0 +1,14 @@
+.oops {
+  margin-left: 3rem;
+  color: rgb(27, 187, 187);
+  margin-top: 70px;
+}
+
+@media (min-width: 800px) {
+  .oops {
+    margin-top: 40vh;
+  }
+  div .footer {
+    margin-top: 2.5vh;
+  }
+}

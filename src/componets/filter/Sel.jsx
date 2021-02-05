@@ -3,15 +3,15 @@ import React from "react";
 import Select from "react-select";
 import "./select.css";
 
-const Sel = ({ name, options }) => {
+const Sel = (props) => {
   return (
     <Select
-      isMulti
-      name={name}
-      options={options}
+      {...props}
+      name={props.name}
+      options={props.options}
       className="basic-multi-select"
       classNamePrefix="select"
-      placeholder={name}
+      placeholder={props.name}
     />
   );
 };

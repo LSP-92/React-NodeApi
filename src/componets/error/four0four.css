@@ -4,4 +4,16 @@
   font-weight: 900;
   color: darkgreen;
   margin-top: 35vh;
+  margin-bottom: 27vh;
+}
+
+@media (max-width: 600px) {
+  .four0four {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: darkgreen;
+    margin-top: 25vh;
+    margin-bottom: 35vh;
+  }
 }

@@ -1,4 +1,9 @@
+div .anuncios {
+  margin-bottom: 10rem;
+}
+
 .cardAds {
+  width: 350px;
   padding: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -9,9 +14,11 @@
 }
 
 .photoAds {
-  max-width: 20vw;
-  min-height: calc(15vw + 10px);
+  max-width: 15vw;
+  min-height: calc(10vw + 10px);
   border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cardAds button {

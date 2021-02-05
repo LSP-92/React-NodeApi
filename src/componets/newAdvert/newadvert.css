@@ -1,0 +1,23 @@
+.new-adevert {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 19.5vh;
+}
+.new-adevert .inp-filter {
+  max-width: 300px;
+}
+
+.new-adevert > div {
+  max-width: 300px;
+}
+
+.file-input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form .new-adevert > div .footer {
+  margin-top: 15vh;
+}

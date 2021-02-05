@@ -9,30 +9,24 @@ const useStyles = makeStyles({
   },
 });
 
-export default function RangeSlider() {
+export default function RangeSlider(props) {
   const classes = useStyles();
-  const [value, setValue] = React.useState([0, 5000]);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   return (
     <div className={`slider ${classes.root}`}>
       <span>Price</span>
       <div className={classes.root} pasive={"true"}>
         <Slider
-          value={value}
-          onChange={handleChange}
+          {...props}
           valueLabelDisplay="auto"
           aria-labelledby="range-slider"
-          max={5000}
+          max={50000}
           min={0}
         />
       </div>
       <div className="slider-text">
-        <span className="value-min">{`Price Min ${value[0]}`}</span>
-        <span className="value-max">{`Price Max ${value[1]}`}</span>
+        <span className="value-min">{`Price Min ${props.value[0]}`}</span>
+        <span className="value-max">{`Price Max ${props.value[1]}`}</span>
       </div>
     </div>
   );

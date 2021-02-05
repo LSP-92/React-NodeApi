@@ -36,10 +36,6 @@ img {
   .title {
     padding: 0.7rem;
   }
-
-  div .menu {
-    display: none !important;
-  }
 }
 
 @media (max-width: 600px) {

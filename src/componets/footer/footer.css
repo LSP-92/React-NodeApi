@@ -1,8 +1,12 @@
 footer {
   background-color: rgba(20, 226, 226, 0.144);
 }
+.noView {
+  display: none;
+}
 .footer {
-  margin-top: 2rem;
+  margin-top: 5vh;
+  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -11,7 +15,7 @@ footer {
 
 .footer .footer-text ul {
   list-style: none;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .footer .footer-links {

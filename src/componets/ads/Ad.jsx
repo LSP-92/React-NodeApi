@@ -1,17 +1,24 @@
 import React from "react";
 
-import { useHistory } from "react-router-dom";
 import Photo from "../shared/Photo";
 
 import Button from "../shared/buttons/Button";
 import { Card } from "react-bootstrap";
 import "./ads.css";
 import deafultImage from "../../assets/img/no-image.png";
-const Ad = ({ name, sale, price, tags, _id, photo }) => {
-  const history = useHistory();
+const Ad = ({
+  name,
+  sale,
+  price,
+  tags,
+  _id,
+  photo,
+  click,
+  buttonTitle,
+  classCss,
+}) => {
   const handleClick = () => {
-    console.log(`/ads/${_id}`);
-    history.push(`/ads/${_id}`);
+    click(_id);
   };
   const tagsSplit = () =>
     tags.map((tag) => (
@@ -38,9 +45,9 @@ const Ad = ({ name, sale, price, tags, _id, photo }) => {
   };
 
   return (
-    <Card className="cardAds">
+    <Card className={"cardAds"}>
       <Photo
-        src={photo ? `http://192.168.43.67:5000${photo}` : deafultImage}
+        src={!photo ? deafultImage : `http://127.0.0.1:5000${photo}`} // TODO usar variable de entorno
         className="photoAds"
       />
       <Card.Title>{name}</Card.Title>
@@ -48,11 +55,11 @@ const Ad = ({ name, sale, price, tags, _id, photo }) => {
         <ul>
           <li>
             <span>Price: </span>
-            {price}
+            {`${price} €`}
           </li>
           <li>
             <span>State: </span>
-            {sale ? "Shell" : "Buy"}
+            {sale ? "Sell" : "Buy"}
           </li>
           <li>
             <span>Tags: </span>
@@ -60,7 +67,7 @@ const Ad = ({ name, sale, price, tags, _id, photo }) => {
         </ul>
         <div className="tags">{tags ? tagsSplit() : " "}</div>
       </div>
-      <Button type="button" title="More" onclick={handleClick} />
+      <Button type="button" title={buttonTitle} onclick={handleClick} />
     </Card>
   );
 };

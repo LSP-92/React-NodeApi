@@ -1,18 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+import { getAdByID, deleteAds } from "../../lib/getAds";
+import AlertDialog from "../shared/modal/Modal";
+import Ad from "./Ad";
 
 import "./adpage.css";
 
-const Ad = ({ name, sale, price, tags, _id }) => (
-  <article className="anuncio">
-    <div className="nameAd">
-      <h3>{name}</h3>
-    </div>
-    <div className="valueAd">
-      <p>Price: {price}</p>
-      <p>State: {sale ? "Shell" : "Buy"}</p>
-      <p>Tags: {tags}</p>
-    </div>
-  </article>
-);
+const Adpage = (props) => {
+  const [advert, setAd] = useState({});
 
-export default Ad;
+  const [isModal, setModal] = useState(false);
+
+  const getOneAdvert = async (path) => {
+    try {
+      const {
+        data: { result: ad },
+      } = await getAdByID(path);
+      setAd(ad);
+      console.log(ad);
+    } catch (error) {
+      props.history.push("/404");
+      console.log(error);
+    }
+  };
+
+  const history = useHistory();
+  const {
+    location: { pathname },
+  } = history;
+
+  const click = async () => {
+    try {
+      setModal(true);
+      await deleteAds(pathname);
+      history.push("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getOneAdvert(pathname);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const buttonUpModal = () => {
+    setModal(true);
+  };
+
+  return (
+    <div className="advertpage">
+      {isModal ? (
+        <AlertDialog
+          message={"You are going to delete your ad ..."}
+          changeState={setModal}
+          click={click}
+        />
+      ) : (
+        <div className="adpage">
+          <Ad buttonTitle="Delete" click={buttonUpModal} {...advert} />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Adpage;
