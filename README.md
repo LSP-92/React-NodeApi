@@ -1,3 +1,9 @@
+# Practica configuración-servidores-despliegue-aplicaciones
+
+http://www.lsp92.es -> Practica React con Api Node.js
+http://54.73.107.102 -> Pagina Web 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
