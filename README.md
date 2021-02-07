@@ -1,7 +1,10 @@
 # Practica configuración-servidores-despliegue-aplicaciones
 
-http://www.lsp92.es -> Practica React con Api Node.js
-http://54.73.107.102 -> Pagina Web 
+http://www.lsp92.es -> Practica React con Api Node.js  
+User : user@example.com passwd: 1234  
+
+http://54.73.107.102 -> Pagina Web   
+
 
 
 # Getting Started with Create React App
