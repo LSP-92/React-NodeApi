@@ -31,11 +31,3 @@ function App(props) {
 }
 
 export default App;
-
-// que me queda por hacer:
-// new input type file mira el mime para enviar el enctype="multipart/formdata" >
-// adverts/id se debe mostrar un modal
-
-// en login si hace en el checklist hay que guardar el token el local staorage
-// revisar el puto useSate
-//  Revisar consolelog perdidos
